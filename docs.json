@@ -21,36 +21,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Using desk",
-        "icon": "ticket",
-        "groups": [
-          {
-            "group": "Get started",
-            "pages": ["using/index", "using/sign-in", "using/install-app"]
-          },
-          {
-            "group": "Work tickets",
-            "pages": [
-              "using/ticket-list",
-              "using/ticket-page",
-              "using/replies-and-notes",
-              "using/status-and-priority",
-              "using/time",
-              "using/internal-tickets",
-              "using/markdown"
-            ]
-          },
-          {
-            "group": "Raise tickets",
-            "pages": ["using/raise-a-ticket", "using/track-tickets", "using/email-a-ticket"]
-          },
-          {
-            "group": "Your account",
-            "pages": ["using/account"]
-          }
-        ]
-      },
-      {
         "tab": "Admin guide",
         "icon": "shield",
         "groups": [
@@ -129,6 +99,46 @@
               "admin/troubleshooting/sign-in",
               "admin/troubleshooting/notifications",
               "admin/troubleshooting/get-help"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Using desk",
+        "icon": "ticket",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "using/index",
+              "using/sign-in",
+              "using/install-app"
+            ]
+          },
+          {
+            "group": "Work tickets",
+            "pages": [
+              "using/ticket-list",
+              "using/ticket-page",
+              "using/replies-and-notes",
+              "using/status-and-priority",
+              "using/time",
+              "using/internal-tickets",
+              "using/markdown"
+            ]
+          },
+          {
+            "group": "Raise tickets",
+            "pages": [
+              "using/raise-a-ticket",
+              "using/track-tickets",
+              "using/email-a-ticket"
+            ]
+          },
+          {
+            "group": "Your account",
+            "pages": [
+              "using/account"
             ]
           }
         ]
