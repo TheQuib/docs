@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Desk Docs",
   "description": "Documentation for the Desk ticketing app.",
   "colors": {
