@@ -1,0 +1,46 @@
+---
+title: "Sign-in and invitations"
+description: "Fix problems signing in or joining."
+---
+
+## Invitations
+
+<AccordionGroup>
+  <Accordion title="The invitation didn’t arrive">
+    Check [Email activity](/admin/notifications/email-activity), then the person’s spam folder. To send another, select **Resend invitation** on their account.
+  </Accordion>
+  <Accordion title="The invitation link expired">
+    Select **Resend invitation** on their account.
+  </Accordion>
+  <Accordion title="The link says it was already used">
+    A mail scanner may have opened it. Ask them to use **Forgot password?** on the sign-in screen.
+  </Accordion>
+  <Accordion title="The account shows as deactivated">
+    Its invitation may have expired. Select **Resend invitation** to reactivate it.
+  </Accordion>
+  <Accordion title="The account was created, but the invitation wasn’t sent">
+    Fix your [outbound email](/admin/notifications/outbound-email), then select **Resend invitation**.
+  </Accordion>
+</AccordionGroup>
+
+## Signing in
+
+<AccordionGroup>
+  <Accordion title="Someone forgot their password">
+    Ask them to select **Forgot password?** on the sign-in screen.
+  </Accordion>
+  <Accordion title="The password reset didn’t arrive">
+    Check [Email activity](/admin/notifications/email-activity). No entry means the address has no active account, or they asked too many times. Try again in an hour.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Invitations" icon="mail-plus" href="/admin/people/invitations">
+    Resend invitations and set when they expire.
+  </Card>
+  <Card title="Get help" icon="life-buoy" href="/admin/troubleshooting/get-help">
+    Find out who to contact.
+  </Card>
+</CardGroup>

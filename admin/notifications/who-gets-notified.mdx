@@ -1,0 +1,51 @@
+---
+title: "Who gets notified"
+description: "Choose who hears about each ticket event, by email and push."
+---
+
+<Info>
+  **Who:** Admins  
+  **Where:** Settings → Notifications
+</Info>
+
+{/* Screenshot: Settings → Notifications, the grid */}
+
+Check a box to notify that audience. A dash means that audience can’t be chosen. The defaults are:
+
+| When | Goes to by default | Can also go to |
+| --- | --- | --- |
+| A ticket is raised | Requester (always), Staff, Admins | Client-wide |
+| Staff reply | Requester | Client-wide |
+| The requester replies | Assignee | Client-wide, Staff, Admins |
+| Someone else replies | Requester, Assignee | Client-wide, Staff, Admins |
+| Resolved or closed | Requester | Client-wide |
+| Set to In progress | No one | Requester, Client-wide |
+| SLA target at risk | Assignee | Staff, Admins |
+| SLA target missed | Assignee | Staff, Admins |
+
+## Audiences
+
+| Audience | Who it is |
+| --- | --- |
+| Requester | The person who raised the ticket. |
+| Client-wide | Client accounts with **All client tickets** on. |
+| Assignee | The person assigned. All staff and admins while unassigned. |
+| Staff | Everyone with the Staff role. |
+| Admins | Everyone with the Administrator role. |
+
+## What is always the same
+
+- Nobody is notified about their own action.
+- Internal notes and internal tickets send nothing.
+- New accounts receive a welcome email, and whoever invited them is told.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Push notifications" icon="smartphone" href="/admin/notifications/push">
+    Notify people on their phones and computers.
+  </Card>
+  <Card title="Outbound email" icon="send" href="/admin/notifications/outbound-email">
+    Send email over SMTP or Microsoft 365.
+  </Card>
+</CardGroup>

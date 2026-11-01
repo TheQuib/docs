@@ -1,0 +1,30 @@
+---
+title: "Targets"
+description: "Set first response and resolution targets for each priority."
+---
+
+<Info>
+  **Who:** Admins  
+  **Where:** Settings → SLAs → Targets
+</Info>
+
+{/* Screenshot: Settings → SLAs, Targets */}
+
+Enter a number, then choose hours or days. Blank means no target. Targets count business hours unless **24/7** is on.
+
+| Priority | First response | Resolution | 24/7 |
+| --- | --- | --- | --- |
+| Urgent | 1 hour | 4 hours | On |
+| High | 4 hours | 1 business day | Off |
+| Normal | 1 business day | 3 business days | Off |
+| Low | 2 business days | 5 business days | Off |
+
+These are the defaults. You can’t add priorities or set targets for one client.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="How SLAs work" icon="book-open" href="/admin/slas/how-slas-work">
+    See when clocks start, pause, and stop.
+  </Card>
+</CardGroup>

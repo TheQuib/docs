@@ -1,0 +1,63 @@
+---
+title: "Email troubleshooting"
+description: "Fix problems with outbound and inbound email."
+---
+
+Start in [Email activity](/admin/notifications/email-activity). It shows each email, its status, and any error.
+
+## Outbound
+
+<AccordionGroup>
+  <Accordion title="Nothing sends">
+    Check that **Send notification emails** is on.
+  </Accordion>
+  <Accordion title="The connection fails or times out">
+    Check the port and SSL/TLS: 465 with **Use SSL/TLS** on, or 587 with it off.
+  </Accordion>
+  <Accordion title="The test works, but notifications don’t send">
+    Open **Waiting to send** and select **Send now**. It says why if it can’t send. Contact whoever set up this help desk.
+  </Accordion>
+  <Accordion title="Email lands in spam">
+    Set up SPF and DKIM on the sending domain.
+  </Accordion>
+  <Accordion title="Microsoft 365 says the client secret is invalid">
+    You may have entered the **Secret ID**. Create a new secret and enter its **Value**.
+  </Accordion>
+  <Accordion title="Microsoft 365 says the secret expired">
+    Create a new secret and enter its **Value**.
+  </Accordion>
+  <Accordion title="Microsoft 365 says you aren’t allowed to send">
+    Check the Exchange permission covers the mailbox. It can take up to two hours to apply.
+  </Accordion>
+  <Accordion title="Microsoft 365 can’t find the mailbox">
+    Use the mailbox’s primary address as the **From address**, not an alias.
+  </Accordion>
+</AccordionGroup>
+
+## Inbound
+
+<AccordionGroup>
+  <Accordion title="Email to the inbound address does nothing">
+    Check that **Receive email at the inbound address** is on, then check Email activity. Contact whoever set up this help desk.
+  </Accordion>
+  <Accordion title="Replies open new tickets">
+    Set the **Reply-to address** to your inbound address.
+  </Accordion>
+  <Accordion title="Senders are told the address only accepts replies">
+    **Open a new ticket from email that is not a reply** is off. Turn it on to accept new email.
+  </Accordion>
+  <Accordion title="Your organization stopped receiving other email">
+    Contact whoever set up this help desk.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Email activity" icon="activity" href="/admin/notifications/email-activity">
+    See what was sent and received.
+  </Card>
+  <Card title="Get help" icon="life-buoy" href="/admin/troubleshooting/get-help">
+    Find out who to contact.
+  </Card>
+</CardGroup>

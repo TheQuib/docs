@@ -1,0 +1,58 @@
+---
+title: "Inbound email"
+description: "Add replies to tickets, and open new tickets from email."
+---
+
+<Info>
+  **Who:** Admins  
+  **Where:** Settings → Notifications → Inbound email
+</Info>
+
+{/* Screenshot: Settings → Notifications, Inbound email */}
+
+## Before you start
+
+- Connect [outbound email](/admin/notifications/outbound-email).
+- Get your inbound address from whoever set up this help desk.
+
+## Steps
+
+<Steps>
+  <Step title="Turn on Receive email at the inbound address">
+    Then select **Save**.
+  </Step>
+  <Step title="Choose what happens to new email">
+    With **Open a new ticket from email that is not a reply** on, new email opens a ticket. With it off, only replies are accepted.
+  </Step>
+  <Step title="Set the Reply-to address">
+    Under **Outbound email**, enter your inbound address.
+  </Step>
+  <Step title="Send a test">
+    Email the inbound address from an outside address, then reply to the notification.
+  </Step>
+</Steps>
+
+<Check>
+  The email opens a ticket, and your reply appears on it.
+</Check>
+
+## How email is handled
+
+| Email | What happens |
+| --- | --- |
+| A reply to a notification | Added to the ticket. |
+| A reply to a resolved or closed ticket | Reopens the ticket. |
+| From a domain listed on a client | The ticket is assigned to that client. |
+| From someone without an account | Opens a ticket. It moves to their account when they get one. |
+| Auto-replies and bounces | Ignored, and listed in Email activity. |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Raise a ticket by email" icon="mail" href="/using/email-a-ticket">
+    See what requesters do.
+  </Card>
+  <Card title="Email activity" icon="activity" href="/admin/notifications/email-activity">
+    See what was sent and received.
+  </Card>
+</CardGroup>

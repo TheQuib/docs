@@ -1,0 +1,47 @@
+---
+title: "How SLAs work"
+description: "See when SLA clocks start, pause, and stop."
+---
+
+Each ticket has two clocks: first response and resolution. Each runs against a target set for the ticket’s priority.
+
+## First response
+
+Stops at the first public staff reply.
+
+## Resolution
+
+| Status | Clock |
+| --- | --- |
+| Open | Runs |
+| In progress | Runs |
+| Awaiting reply | Paused |
+| On hold | Paused |
+| Resolved | Stops |
+| Reopened | Continues |
+
+## When priority changes
+
+The new priority’s target applies, measured from when the ticket was raised.
+
+## Which tickets have clocks
+
+Tickets raised after SLAs are turned on. Internal tickets have none.
+
+## Where staff see them
+
+- A badge on the ticket list
+- An **SLA** card on the ticket page
+- The **SLA at risk or overdue** filter
+- The **SLA due soonest** sort
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Targets" icon="target" href="/admin/slas/targets">
+    Set targets for each priority.
+  </Card>
+  <Card title="Working hours and holidays" icon="calendar" href="/admin/slas/hours-and-holidays">
+    Set when business-hours clocks run.
+  </Card>
+</CardGroup>

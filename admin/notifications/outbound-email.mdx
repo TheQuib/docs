@@ -1,0 +1,85 @@
+---
+title: "Outbound email"
+description: "Send notifications, invitations, and password resets from your own address."
+---
+
+<Info>
+  **Who:** Admins  
+  **Where:** Settings → Notifications → Outbound email
+</Info>
+
+{/* Screenshot: Settings → Notifications, Outbound email */}
+
+<Tabs>
+  <Tab title="SMTP">
+    <Steps>
+  <Step title="Turn on Send notification emails">
+    Set **Send with** to SMTP.
+  </Step>
+  <Step title="Enter your server details">
+    Enter **SMTP host**, **Port**, **SMTP username**, and **SMTP password**. Turn on **Use SSL/TLS** for port 465. Leave it off for port 587.
+  </Step>
+  <Step title="Enter your sender details">
+    Enter **From name**, **From address**, and **Reply-to address**.
+  </Step>
+  <Step title="Save, then send a test">
+    Select **Send test message**.
+  </Step>
+</Steps>
+
+    Microsoft 365 SMTP is not supported. Use the Microsoft 365 tab.
+  </Tab>
+  <Tab title="Microsoft 365">
+    You need a Microsoft 365 administrator. Shared mailboxes work.
+
+    <Steps>
+  <Step title="Register an app in Microsoft Entra">
+    Create a single-tenant app registration. Copy its **Directory (tenant) ID** and **Application (client) ID**.
+  </Step>
+  <Step title="Create a client secret">
+    Copy its **Value**, not its **Secret ID**. Note the expiry date.
+  </Step>
+  <Step title="Allow the app to send from your mailbox">
+    In Exchange, grant **Application Mail.Send** limited to that mailbox. Don’t add **Mail.Send** under API permissions in Entra. This can take up to two hours to apply.
+  </Step>
+  <Step title="Enter the details in desk">
+    Turn on **Send notification emails**, and set **Send with** to Microsoft 365. Enter both IDs, the **Client secret**, and the **From address**.
+  </Step>
+  <Step title="Save, then send a test">
+    Select **Send test message**.
+  </Step>
+</Steps>
+
+    <Warning>
+      Email stops sending when the client secret expires. Create a new one and enter it before then.
+    </Warning>
+  </Tab>
+</Tabs>
+
+<Check>
+  The test message arrives. Check the spam folder if it doesn’t.
+</Check>
+
+Use your inbound address as the **Reply-to address** so replies are added to the ticket.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The test message failed">
+    See [Email troubleshooting](/admin/troubleshooting/email).
+  </Accordion>
+  <Accordion title="What is the backup sender?">
+    It sends invitations and password resets when your email fails.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Who gets notified" icon="bell-ring" href="/admin/notifications/who-gets-notified">
+    Choose who hears about each event.
+  </Card>
+  <Card title="Email activity" icon="activity" href="/admin/notifications/email-activity">
+    See what was sent and received.
+  </Card>
+</CardGroup>
