@@ -3,16 +3,284 @@ title: "Release notes"
 description: "What changed in each release."
 ---
 
-<Update label="v1.16.4" description="November 1, 2026">
-  - **Settings → Users:** people are grouped by client. Search by name or email.
-  - **Settings → Branding:** a preview shows the app and sign-in screen as you type.
-  - **Logo:** with no logo set, the sidebar and top bar show only the organization name.
+<Update label="v1.16.4" description="November 1, 2026" tags={["Administrators only"]}>
+  **Users and Branding, reworked**
+
+  - Settings → Users groups people by client, with your team first. Search by name or email, and show only people who never signed in or are deactivated.
+  - Settings → Branding shows a preview of the app and sign-in screen, in light and dark, as you type. Logo and favicon URLs show the image they load, or that it didn’t load.
+  - With no logo set, the sidebar and top bar show only the organization name.
+  - App text uses American spellings.
 </Update>
 
 <Update label="v1.16.3" description="November 1, 2026">
-  - **Pull to refresh:** pull down at the top of a page in the installed app to refresh it.
+  **Pull to refresh**
+
+  - Pull down at the top of a page in the installed app to refresh it. It asks first if a reply or new ticket is being written.
 </Update>
 
-<Update label="v1.16.2" description="October 25, 2026">
-  - **Send and resolve:** staff can reply and resolve a ticket in one step.
+<Update label="v1.16.2" description="October 25, 2026" tags={["Staff and administrators"]}>
+  **Send and resolve**
+
+  - Reply and resolve a ticket in one step from the reply box, with Send and close in its menu. On a resolved or closed ticket it is Send and reopen.
+  - The requester receives one email with the reply and the new status.
+</Update>
+
+<Update label="v1.16.1" description="October 25, 2026">
+  **Maintenance**
+
+  - Behind-the-scenes fixes. Nothing changes in the app.
+</Update>
+
+<Update label="v1.16.0" description="October 25, 2026">
+  **Better on your phone**
+
+  - On a phone, desk offers to install itself as an app, so you can open it from your Home Screen.
+  - The first time you open the installed app, it offers to turn on notifications for your tickets.
+  - The bar at the top of the screen now stays in place when you scroll past the top or bottom of a page.
+  - The app shows its icon while it starts, instead of a blank screen.
+</Update>
+
+<Update label="v1.15.4" description="October 15, 2026">
+  **Plainer wording**
+
+  - Settings hints, Email activity warnings, the update banner, and ticket hints are shorter.
+  - Ticket, account, invitation, and password reset emails are shorter.
+</Update>
+
+<Update label="v1.15.3" description="October 14, 2026">
+  **Clearer push settings**
+
+  - Push settings say what they do.
+  - Send a test sits under the device switch in Settings → Account.
+</Update>
+
+<Update label="v1.15.2" description="October 13, 2026">
+  **Push notifications, and an installable app**
+
+  - Receive notifications on phones and computers. Admins turn them on in Settings → Notifications → Push notifications. Each person then turns them on for each device in Settings → Account.
+  - Install the help desk as an app. iPhone and iPad need it on the Home Screen for notifications.
+  - A notification names the ticket and who acted, never what anyone wrote.
+  - Settings → Email is now Settings → Notifications.
+</Update>
+
+<Update label="v1.15.1" description="October 11, 2026" tags={["Administrators only"]}>
+  **Choose who gets notified**
+
+  - Notifications are a grid of ticket events against who can be notified: Requester, Client-wide, Assignee, Staff, and Admins.
+  - SLA at-risk and missed reminders are set in the grid.
+  - A reply from someone other than the requester or staff emails the requester. Turn this off in the grid.
+  - Client-wide accounts can be emailed about their client’s tickets. This is off by default.
+</Update>
+
+<Update label="v1.15.0" description="October 10, 2026">
+  **Smoother everywhere**
+
+  - Pages, menus and cards now slide and fade into place instead of jumping, so moving around desk feels smoother.
+  - "Loading…" no longer flashes up for a split second on pages that load quickly.
+  - On a phone, Details on a ticket slides up from the bottom of the screen and back down when you close it.
+</Update>
+
+<Update label="v1.14.1" description="October 9, 2026" tags={["Administrators only"]}>
+  **Let someone see all of their client's tickets**
+
+  - A client account can now see and reply on every ticket for its client, not only its own. Turn it on with All client tickets, under the person's client in Settings → Users.
+  - People with it on get a Mine / Everyone switch at the top of their ticket list. Everyone shows who raised each ticket.
+</Update>
+
+<Update label="v1.14.0" description="October 9, 2026" tags={["Staff and administrators"]}>
+  **SLAs, and internal tickets for staff work**
+
+  - Tickets can have SLA targets for a first response and for resolution, set by priority and counted in business hours. An administrator sets them up in Settings → SLAs, and they are off until then.
+  - The ticket list shows each ticket's nearest SLA deadline, such as "Due in 2h" or "Overdue", and "SLA met" or "SLA missed" once it is resolved. Filter to tickets at risk or overdue, or sort by the deadline due soonest.
+  - An SLA card on each ticket shows both deadlines, and whether each is on track, at risk, paused or missed. The assignee is emailed when a ticket is at risk and again if it misses a target.
+  - Internal tickets are for staff's own work. Tick Internal on New ticket, or open the new Internal queue in the sidebar. Only staff and administrators can see them, and nobody is emailed about them.
+</Update>
+
+<Update label="v1.13.0" description="October 9, 2026">
+  **A ticket page built for long conversations**
+
+  - On a computer, a ticket's conversation now scrolls in its own column and opens at the newest message. The details beside it scroll separately.
+  - The reply box stays at the bottom of the conversation as a single line. Click it to open the full editor; Esc closes it and keeps your draft, and Ctrl+Enter (⌘+Enter on a Mac) sends.
+  - The editor has buttons for bold, italic, code, links, lists, quotes and code blocks, with Ctrl+B, Ctrl+I, Ctrl+E and Ctrl+K as shortcuts. "Markdown is supported" now opens a short reference.
+  - In a list, Enter starts the next item for you. Enter on an empty item ends the list.
+</Update>
+
+<Update label="v1.12.0" description="October 9, 2026" tags={["Staff and administrators"]}>
+  **In progress, and invitations that expire**
+
+  - Tickets have a new status, In progress, for work staff have started. Set it from the Status menu on a ticket; nothing sets it automatically.
+  - Settings → Email → Notifications can email the requester when their ticket is set to In progress. The switch is off by default.
+  - When someone first signs in from an invitation, they get a welcome email and the person who invited them is told.
+  - An invitation left unused for 14 days now deactivates the account and emails the person and whoever invited them. Resend invitation in Settings → Users sends a new link and reactivates it.
+</Update>
+
+<Update label="v1.11.0" description="October 9, 2026" tags={["Staff and administrators"]}>
+  **Time logging on tickets**
+
+  - Log time spent on a ticket with the Time spent field under the reply box. It is saved with that reply or internal note.
+  - The new Time card in a ticket's sidebar lists every entry under the ticket's total. Hover over the total to see each person's share.
+  - Use Log time on the Time card for time with nothing to write, such as an on-site visit. Entries can be dated earlier than today.
+  - Time is visible to staff and administrators only. Requesters never see it, including time logged with a public reply, and it is never included in emails.
+</Update>
+
+<Update label="v1.10.4" description="October 9, 2026" tags={["Administrators only"]}>
+  **Resend invitations, and last sign-in**
+
+  - Resend an invitation from Settings → Users to any active account that has never signed in.
+  - Settings → Users shows when each account last signed in.
+  - The profile picture in Settings → Account links to Gravatar.
+  - Emails over SMTP no longer show a stray “=20”.
+  - A long address no longer pushes a phone screen sideways, and text boxes no longer zoom the page on phones and tablets.
+</Update>
+
+<Update label="v1.10.3" description="September 27, 2026" tags={["Administrators only"]}>
+  **A dark mode logo**
+
+  - Add a logo for dark mode in Settings → Branding. Emails always use the ordinary logo.
+</Update>
+
+<Update label="v1.10.2" description="September 22, 2026">
+  **Better attachments**
+
+  - Attach files with a button, or drop them on the area around it. Attachments show an icon, name, and size.
+  - Settings → Users shows each account’s status as an icon, and no longer pushes the page sideways on a phone.
+</Update>
+
+<Update label="v1.10.1" description="September 22, 2026">
+  **Replies reopen waiting tickets**
+
+  - A requester’s reply moves a waiting ticket back to Open, from the app or by email, without showing an error.
+</Update>
+
+<Update label="v1.10.0" description="September 18, 2026">
+  **Dark mode, and Markdown**
+
+  - The help desk can be dark. It follows your device by default, and you can pin it light or dark in Settings → Account → Appearance.
+  - Times can read 2:30 PM or 14:30, whichever you prefer — Settings → Account → Clock.
+  - Tickets and replies can be written in Markdown, with a Preview tab beside Write so you can see it before you send it.
+  - When the help desk is updated while you have it open, a line at the top offers you a refresh.
+</Update>
+
+<Update label="v1.9.1" description="September 17, 2026">
+  **A quieter update notice**
+
+  - The What’s new notice is a single line you can dismiss. It stops appearing once a release is two weeks old.
+  - Turn update notices off in Settings → Account → Updates.
+</Update>
+
+<Update label="v1.9.0" description="September 17, 2026" tags={["Staff and administrators"]}>
+  **Clients and locations**
+
+  - Settings → Client management holds the businesses you support, and the email domains that identify each one.
+  - Settings → Locations holds the places you support, each with an address, phone number and time zone.
+  - Every ticket now shows the client and location it came from. Set either one in the ticket's Details, and filter the ticket list by client.
+  - Settings → Users is where you say which client a person belongs to and which building they sit in.
+</Update>
+
+<Update label="v1.8.4" description="September 17, 2026" tags={["Administrators only"]}>
+  **Tab title**
+
+  - Set the browser tab’s name in Settings → Branding. Left blank, it shows the organization name.
+  - Tapping a text field on a phone or tablet no longer zooms the page.
+</Update>
+
+<Update label="v1.8.3" description="September 15, 2026" tags={["Administrators only"]}>
+  **Send or cancel waiting email**
+
+  - Send now on Settings → Email activity → Waiting to send sends the queue and says what happened.
+  - Cancel a waiting notification from the same table.
+  - The table shows each email’s status.
+</Update>
+
+<Update label="v1.8.2" description="September 14, 2026" tags={["Administrators only"]}>
+  **Email activity**
+
+  - Settings → Email activity lists every email sent or received, with its status and any error.
+  - Warnings appear when notifications are stuck, or were given up on.
+  - Each ticket has a card for staff and admins showing what was sent and received.
+  - Resolved and closed emails send immediately.
+</Update>
+
+<Update label="v1.8.1" description="September 13, 2026" tags={["Administrators only"]}>
+  **Replies-only inbound email**
+
+  - Turn off Open a new ticket from email that is not a reply to accept only replies. Other email is refused, with a message pointing to your help desk.
+  - “Accept tickets by email” is now Receive email at the inbound address.
+</Update>
+
+<Update label="v1.8.0" description="September 13, 2026" tags={["Staff and administrators"]}>
+  **Delete accounts, and sign-in emails from your own mailbox**
+
+  - Administrators can now delete an account from Settings → Users, not only deactivate it. Their tickets and messages stay.
+  - Invitations and password reset emails now come from your help desk's own email address, with your name and logo.
+</Update>
+
+<Update label="v1.7.0" description="September 13, 2026" tags={["Staff and administrators"]}>
+  **Microsoft Graph API email connector**
+
+  - The app now supports sending emails via the Microsoft Graph API to use shared mailboxes without an exchange license.
+</Update>
+
+<Update label="v1.6.1" description="September 13, 2026">
+  **Read more in What’s new**
+
+  - What’s new shows each release’s longer description behind Read more.
+</Update>
+
+<Update label="v1.6.0" description="September 13, 2026">
+  **Settings page revamped + better branding**
+
+  - The settings page has been completely revamped. Everything is categorized for your organization pleasure.
+  - Users can now update their own display name.
+  - Favicon support.
+</Update>
+
+<Update label="v1.5.0" description="September 12, 2026">
+  **Updates now explain themselves**
+
+  - A notice appears at the top of the page whenever this help desk has been updated, so a change never turns up without an explanation.
+  - Opening it brings you to What’s new, which lists every update with the most recent first.
+  - You can come back to it at any time: on a computer from the menu under your name, and on a phone from the icon in the bar along the top.
+</Update>
+
+<Update label="v1.4" description="September 12, 2026">
+  **A tidier sidebar**
+
+  - Settings has moved. It is now in the menu that opens when you click your name, at the foot of the sidebar — along with Sign out.
+  - The sidebar is wider, so longer organization names fit without being cut short.
+  - The collapse control has moved up next to the logo.
+</Update>
+
+<Update label="v1.3" description="September 12, 2026">
+  **Add accounts without an email, and profile pictures**
+
+  - Add an account without sending an invitation. They set a password with Forgot password?.
+  - Admins can edit a person’s display name.
+  - Profile pictures come from Gravatar, with colored initials for anyone without one.
+</Update>
+
+<Update label="v1.2" description="September 12, 2026">
+  **Fewer duplicate emails, and resolved emails**
+
+  - One event no longer sends you two emails, and you no longer receive your own replies.
+  - With inbound email off, emails no longer ask the requester to reply.
+  - Resolving or closing a ticket emails the requester.
+  - Choose who is alerted about new tickets.
+  - Your logo appears in notification emails.
+</Update>
+
+<Update label="v1.1" description="September 12, 2026" tags={["Administrators only"]}>
+  **US English labels**
+
+  - Settings use “Organization name” and “Accent color”.
+</Update>
+
+<Update label="v1.0" description="September 11, 2026">
+  **First release**
+
+  - Raise tickets with attachments, and reply in threaded conversations with staff-only internal notes.
+  - Roles for admins, staff, and clients. Accounts are by invitation.
+  - Outbound email over any SMTP server, and optional inbound email that threads replies and reopens closed tickets.
+  - Settings for branding, email, categories, and users.
+  - Ticket counts that double as filters, automatic closing of resolved tickets, and live updates.
 </Update>

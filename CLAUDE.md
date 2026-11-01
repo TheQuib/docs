@@ -2,6 +2,8 @@
 
 Public docs for desk, mostly for admins of a client's help desk. The app's code is in the private `desk` repo, at `C:\Repos\desk`. Check facts against it, and never copy its internals here.
 
+`release-notes.mdx` gets a new entry from each desk release. Don't reorder or regenerate it.
+
 ## Writing
 
 - Say what something does, what happened, or what to do next. Use as few words as possible.
