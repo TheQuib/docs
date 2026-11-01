@@ -21,70 +21,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Admin guide",
-        "icon": "shield",
-        "groups": [
-          {
-            "group": "Get started",
-            "pages": ["index", "admin/setup-checklist", "admin/roles", "admin/glossary"]
-          },
-          {
-            "group": "People",
-            "root": "admin/people/index",
-            "pages": ["admin/people/add-people", "admin/people/manage-access", "admin/people/invitations"]
-          },
-          {
-            "group": "Clients and locations",
-            "pages": ["admin/clients", "admin/locations"]
-          },
-          {
-            "group": "Tickets",
-            "root": "admin/tickets/index",
-            "pages": ["admin/tickets/categories", "admin/tickets/lifecycle"]
-          },
-          {
-            "group": "SLAs",
-            "root": "admin/slas/index",
-            "pages": [
-              "admin/slas/how-slas-work",
-              "admin/slas/set-up",
-              "admin/slas/hours-and-holidays",
-              "admin/slas/targets",
-              "admin/slas/reminders",
-              "admin/slas/turn-off"
-            ]
-          },
-          {
-            "group": "Email and notifications",
-            "root": "admin/notifications/index",
-            "pages": [
-              "admin/notifications/outbound-email",
-              "admin/notifications/inbound-email",
-              "admin/notifications/who-gets-notified",
-              "admin/notifications/push",
-              "admin/notifications/email-activity"
-            ]
-          },
-          {
-            "group": "Branding",
-            "pages": ["admin/branding"]
-          },
-          {
-            "group": "Reference",
-            "pages": ["admin/settings-reference"]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "admin/troubleshooting/email",
-              "admin/troubleshooting/sign-in",
-              "admin/troubleshooting/notifications",
-              "admin/troubleshooting/get-help"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Using desk",
         "icon": "ticket",
         "groups": [
@@ -111,6 +47,89 @@
           {
             "group": "Your account",
             "pages": ["using/account"]
+          }
+        ]
+      },
+      {
+        "tab": "Admin guide",
+        "icon": "shield",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "index",
+              "admin/setup-checklist",
+              "admin/roles",
+              "admin/glossary"
+            ]
+          },
+          {
+            "group": "People",
+            "root": "admin/people/index",
+            "pages": [
+              "admin/people/add-people",
+              "admin/people/manage-access",
+              "admin/people/invitations"
+            ]
+          },
+          {
+            "group": "Clients and locations",
+            "pages": [
+              "admin/clients",
+              "admin/locations"
+            ]
+          },
+          {
+            "group": "Tickets",
+            "root": "admin/tickets/index",
+            "pages": [
+              "admin/tickets/categories",
+              "admin/tickets/lifecycle"
+            ]
+          },
+          {
+            "group": "SLAs",
+            "root": "admin/slas/index",
+            "pages": [
+              "admin/slas/how-slas-work",
+              "admin/slas/set-up",
+              "admin/slas/hours-and-holidays",
+              "admin/slas/targets",
+              "admin/slas/reminders",
+              "admin/slas/turn-off"
+            ]
+          },
+          {
+            "group": "Email and notifications",
+            "root": "admin/notifications/index",
+            "pages": [
+              "admin/notifications/outbound-email",
+              "admin/notifications/inbound-email",
+              "admin/notifications/who-gets-notified",
+              "admin/notifications/push",
+              "admin/notifications/email-activity"
+            ]
+          },
+          {
+            "group": "Branding",
+            "pages": [
+              "admin/branding"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "admin/settings-reference"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "admin/troubleshooting/email",
+              "admin/troubleshooting/sign-in",
+              "admin/troubleshooting/notifications",
+              "admin/troubleshooting/get-help"
+            ]
           }
         ]
       },
